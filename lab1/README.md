@@ -5,25 +5,22 @@ gcc -o oddEven oddEven.c # this will compile oddEven.c and output an executable 
 ```
 
 # My Files
-## gettime.c
+## oddEven.c
 
 ### main()
 
-This function calls on gettime from the header file and prints it's output
+This function calls for the user to input an integer variable and returns an output claiming if the integer is odd or even.
 
-## gettime.h
+### how to run
 
-### gettime(int x)
-This function returns a double
-
-This function takes an integer as a parameter
-
-It creates a struct of a timeval object then gets the time of day and returns it
+in order to run the program, enter the command "./oddEven" in the command line. the program will then ask you to enter an integer value. Once you do, the program will then output if the given integer is odd or even.
 
 # Output screenshots
 <put your screenshots here>
 
 # References
 
-https://www.cs.colby.edu/maxwell/courses/tutorials/maketutor/
-I used this link to make a makefile for my project
+No references
+
+# github repo
+
