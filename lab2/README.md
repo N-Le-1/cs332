@@ -13,16 +13,15 @@ gcc -o insertionSort insertionSort.c # this will compile insertionSort.c and out
 This function calls on insertionSort to sort the users 10 numbers and prints the sorted array of the given numbers.
 
 ### insertionSort(int x)
-This function returns a double
+This function is a void function, but will output a given sorted array.
 
-This function takes an integer as a parameter
+The function takes in an integer array which is the array given by the user and int size which in this case is 10.
 
-It creates a struct of a timeval object then gets the time of day and returns it
+The function creates a sorted 10 sized array for any numbers.
 
 # Output screenshots
 <put your screenshots here>
 
 # References
 
-https://www.cs.colby.edu/maxwell/courses/tutorials/maketutor/
-I used this link to make a makefile for my project
+
