@@ -1,8 +1,8 @@
 #include <stdio.h>
 
-void insertionSort(int numArray[], int num) {
+void insertionSort(int numArray[], int size) {
     int i, key, j;
-    for (i = 1; i < num; i++) {
+    for (i = 1; i < size; i++) {
         key = numArray[i];
         j = i - 1;
 
