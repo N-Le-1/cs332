@@ -20,7 +20,7 @@ The function takes in an integer array which is the array given by the user and 
 The function creates a sorted 10 sized array for any numbers.
 
 # Output screenshots
-<put your screenshots here>
+![image](https://github.com/N-Le-1/cs332/assets/156348689/d1aa2b6b-293e-4312-97db-ff1a0808cf3a)
 
 # References
 
