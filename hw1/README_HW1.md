@@ -18,9 +18,41 @@ gcc -o hw1 hw1.c -lm # this will compile hw1.c and output an executable called h
 
 This function calls on all 5 different functions in the homework. Only 1 out of the 5 questions ask for user input(Question 2).
 
-## gettime.h
+## HW1 Functions:
 
-### gettime(int x)
+### numberTransformer(int n)
+This function prints out a different string depending on the different conditions of the number.
+
+This function takes an integer as a parameter
+
+This function uses the helps of 3 other functions that include:
+  - a function checking if the int is prime or not.
+  - a function that generates the closest prime number below the given int.
+  - a function that adds the sum of the integers in a number. ex.(123 = (1+2+3 = 6).
+
+
+### UABNumber()
+This function returns a double
+
+This function takes an integer as a parameter
+
+It creates a struct of a timeval object then gets the time of day and returns it
+
+### reverseNum(int n3)
+This function returns a double
+
+This function takes an integer as a parameter
+
+It creates a struct of a timeval object then gets the time of day and returns it
+
+### smallerThanIndex()
+This function returns a double
+
+This function takes an integer as a parameter
+
+It creates a struct of a timeval object then gets the time of day and returns it
+
+### arrayDetails()
 This function returns a double
 
 This function takes an integer as a parameter
