@@ -29,7 +29,8 @@ This function uses the helps of 3 other functions that include:
   - a function checking if the int is prime or not.
   - a function that generates the closest prime number below the given int.
   - a function that adds the sum of the integers in a number. ex.(123 = (1+2+3 = 6).
-The function will first check if the given int is a prime number and not 3 or 5. If this is true, then the program will output: "Go Blazers". If one of the conditions is false, the program will go to the next condition and check if the int is divisble by both 5 and 3. If so, the output will be "UAB CS 332&532". If this condition fails, the next condition will take the given int and use the help of one of the functions I created to generate the sum of the digitis in the given int and check if it is divisible by 3. If so, the program will output, "CS".
+
+The function will first check if the given int is a prime number and not 3 or 5. If this is true, then the program will output: "Go Blazers". If one of the conditions is false, the program will go to the next condition and check if the int is divisble by both 5 and 3. If so, the output will be "UAB CS 332&532". If this condition fails, the next condition will take the given int and use the help of one of the functions I created to generate the sum of the digitis in the given int and check if it is divisible by 3. If so, the program will output, "CS". If this condition fails, the program will check if the given int is a power of 2 which I used the math library to use the "pow()" function. If the int is a power of 2, then the program will call one of the functions I created to find the closest prime number below the given int, and add these two numbers together and output the sum. If all the conditions fail, then the program will take the given int, square the number, then output the number as a string.
 
 ### UABNumber()
 This function returns a double
