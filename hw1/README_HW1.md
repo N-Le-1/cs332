@@ -29,7 +29,7 @@ This function uses the helps of 3 other functions that include:
   - a function checking if the int is prime or not.
   - a function that generates the closest prime number below the given int.
   - a function that adds the sum of the integers in a number. ex.(123 = (1+2+3 = 6).
-
+The function will first check if the given int is 
 
 ### UABNumber()
 This function returns a double
