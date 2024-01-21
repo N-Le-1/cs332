@@ -29,7 +29,7 @@ This function uses the helps of 3 other functions that include:
   - a function checking if the int is prime or not.
   - a function that generates the closest prime number below the given int.
   - a function that adds the sum of the integers in a number. ex.(123 = (1+2+3 = 6).
-The function will first check if the given int is 
+The function will first check if the given int is a prime number and not 3 or 5. If this is true, then the program will output: "Go Blazers". If one of the conditions is false, the program will go to the next condition and check if the int is divisble by both 5 and 3. If so, the output will be "UAB CS 332&532". If this condition fails, the next condition will take the given int and use the help of one of the functions I created to generate the sum of the digitis in the given int and check if it is divisible by 3. If so, the program will output, "CS".
 
 ### UABNumber()
 This function returns a double
