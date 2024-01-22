@@ -66,6 +66,7 @@ The function will give details about the given array. Each spot in the returned 
 # References
 
 https://stackoverflow.com/questions/4174080/using-pow-function-throws-undefined-reference-error-in-c
+
 Used this link to learn that I need to add "-lm" when I compile my code in order for the math library to connect.
 
 
