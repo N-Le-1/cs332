@@ -14,10 +14,10 @@ int main(int argc, char**agrv){
     int arr[5] = {10,20,1,2,30};
     int arr2[6] = {-8,18,103,1,-4,631};
 
-//Question 1
+    printf("***Question 1*** \n");
     numberTransformer(3);
 
-//Question 2
+    printf("***Question 2*** \n");
     printf("Enter an integer: ");
     scanf(" %d",&n2);
     UABNumber(n2);
@@ -28,13 +28,13 @@ int main(int argc, char**agrv){
         printf("False \n");
     }
 
-//Question 3
+    printf("***Question 3*** \n");
     printf("%d \n",reverseNum(1234));
     
-//Question 4
+    printf("***Question 4*** \n");
     printf("%d \n", smallerThanIndex(arr));
 
-//Question 5
+    printf("***Question 5*** \n");
     arrayDetails(arr2);
 
 }
