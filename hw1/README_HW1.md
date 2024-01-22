@@ -54,11 +54,11 @@ This function takes in a 5 integer array.
 The function will check every index of the array and see if the number in the index is less than the actual index itself. If 1 is in index 2, then this would be a valid iteration and would be added to the answer. The program first initalises the varibale "ans" which will keep count of how many times the integer is less than its indexed spot. The program will run a for loop 5 times, because the input will always have to have a 5 integer array. During each iteration, the algorithm will check if the number is less than the index of the same number. If it is, then "ans" will increment by 1, if not, then the program will move on to the next iteration until it reaches the end of the for loop. Once the loop ends the program will finally return "ans" which represents how many numbers are less than their index in the 5 integer array.
 
 ### arrayDetails()
-This function returns a double
+This function returns a 5 digit array
 
-This function takes an integer as a parameter
+This function takes a 6 digit array.
 
-It creates a struct of a timeval object then gets the time of day and returns it
+The function will give details about the given array. Each spot in the returned array will have a different meaning. The first index represents the minimum number in the array, the next spot represents the index of the minimum value, the next spot represents the mean, the next spot represenets the maximum value of the array, and the final spot represents the index of the maximum value of the array. The program will first initialise all these variables to 0. Next, the program will run a for loop that will iterate 6 times due to the input being a 6 integer array. Each iteration will check if the current value in both minimum and maximum can be replaced. For example if the current number in the iteration is less than the current minimum number, then the iteration number will be the new minimum number. This same process will happen in the maximum number variable. If the program does replace either the minimum or maximum number variable, then the index will also be updated to the new iterated number's index. After each iteration in the for loop, the program will take each number and add it to a double variable called sum.
 
 # Output screenshots
 <put your screenshots here>
