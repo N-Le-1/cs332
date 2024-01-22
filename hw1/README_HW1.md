@@ -61,9 +61,12 @@ This function takes a 6 digit array.
 The function will give details about the given array. Each spot in the returned array will have a different meaning. The first index represents the minimum number in the array, the next spot represents the index of the minimum value, the next spot represents the mean, the next spot represenets the maximum value of the array, and the final spot represents the index of the maximum value of the array. The program will first initialise all these variables to 0. Next, the program will run a for loop that will iterate 6 times due to the input being a 6 integer array. Each iteration will check if the current value in both minimum and maximum can be replaced. For example if the current number in the iteration is less than the current minimum number, then the iteration number will be the new minimum number. This same process will happen in the maximum number variable. If the program does replace either the minimum or maximum number variable, then the index will also be updated to the new iterated number's index. After each iteration in the for loop, the program will take each number and add it to a double variable called sum. This will continue until the program is done iterating through the array. Once this is finished, the variable "sum" will be divided by 6 in order to find the mean of the array and will have a rounded decimal place to 2 spots. Finally, the program will output each value to its respected location in the output array.
 
 # Output screenshots
-<put your screenshots here>
+![image](https://github.com/N-Le-1/cs332/assets/156348689/e0fe1d77-a447-434c-acfc-8142d9130347)
 
 # References
 
 https://www.cs.colby.edu/maxwell/courses/tutorials/maketutor/
 I used this link to make a makefile for my project
+
+# GitHub Repo. 
+
