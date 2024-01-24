@@ -3,7 +3,7 @@
 #include <math.h>
 
 int numberTransformer(int n);
-int UABNumber(int n2);
+char* UABNumber();
 int reverseNum(int n3);
 int smallerThanIndex(int arr[5]);
 void arrayDetails(int arr[]);
@@ -18,15 +18,8 @@ int main(int argc, char**agrv){
     numberTransformer(3);
 
     printf("***Question 2*** \n");
-    printf("Enter an integer: ");
-    scanf(" %d",&n2);
-    UABNumber(n2);
-    if(true){
-        printf("True \n");
-    }
-    else{
-        printf("False \n");
-    }
+    char* result = UABNumber();
+    printf("%s \n",result);
 
     printf("***Question 3*** \n");
     printf("%d \n",reverseNum(1234));
@@ -95,7 +88,12 @@ int numberTransformer(int n){
 }
 
 /*Question 2 DONE*/
-int UABNumber(int n2) {
+char* UABNumber() {
+    int n2 = 0;
+    char* boolVal = "False";
+
+    printf("Enter an integer: ");
+    scanf("%d", &n2);
 
     // Base Case
     if (n2 == 0) {
@@ -110,11 +108,9 @@ int UABNumber(int n2) {
     }
     
     if(divisors == n2){
-        return true;
+        boolVal = "True";
     }
-    else{
-        return false;
-    }
+    return boolVal;
 }
 
 /*Question 3 DONE*/
