@@ -42,7 +42,7 @@ This function takes in a string array and an integer which is the size of the sa
 
 This function is a simple for loop that iterates through the sorted array and prints out every element in the array which will be an alphabetical sorted array.
 # Output screenshots
-<put your screenshots here>
+![image](https://github.com/N-Le-1/cs332/assets/156348689/fc2653cd-4aee-4b41-aaba-d64a918c8d14)
 
 # References
 
