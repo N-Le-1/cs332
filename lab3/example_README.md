@@ -49,5 +49,5 @@ This function is a simple for loop that iterates through the sorted array and pr
 "Lab Assignment #3" on Canvas
 I used the given function and examples in the assignment pdfs and given files like insertionSort.
 
-#Git Repo
+# Git Repo
 https://github.com/N-Le-1/cs332
