@@ -1,4 +1,5 @@
 # Compilation Instructions
+
 ```bash
 gcc -o <executable name> <filename> # this will compile the filename and return an executable with the executable name
 
@@ -23,5 +24,4 @@ gcc -o lab4 lab4.c # this will compile lab4.c and output an executable called la
 I used the Lab4 pdf to reference the uses of file manipulation.
 
 # GitHub Repo.
-
 https://github.com/N-Le-1/cs332
