@@ -14,7 +14,9 @@ gcc -o lab4 lab4.c # this will compile lab4.c and output an executable called la
 ##main(int argc, char*argv[])
 - The function manipulates files to copy the content of one file and paste it to another
 - The function takes in no parameters besides the 2 different files in the "char *argv[]" after the execution line.
-- The main function will take in 2 different files and copy the contents of file2 into file1. The function will check for errors and if the files are the same before reading and copying the files. After the program finishes, the terminal will recieve a confirmation print statement that confirms the operation has been completed.
+- The main function will take in 2 different files and copy the contents of file2 into file1. 
+  The function will check for errors and if the files are the same before reading and copying the files. After the program finishes, 
+  the terminal will recieve a confirmation print statement that confirms the operation has been completed.
 
 # Output screenshots
 ![image](https://github.com/N-Le-1/cs332/assets/156348689/dd131f41-40fd-49ca-a8e9-e98656731530)
