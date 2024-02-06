@@ -23,7 +23,7 @@ gcc -o hw2 hw2.c # this will compile hw2.c and output an executable called hw2
 
 ### main()
 
-This function calls on gettime from the header file and prints it's output
+This function calls on listFiles and depending on the condition selected, the program will output the files listed in differnt ways.
 
 ## gettime.h
 
