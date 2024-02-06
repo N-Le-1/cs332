@@ -19,7 +19,7 @@ If you're not using a make file
 ```bash
 gcc -o <executable name> <filename> # this will compile the filename and return an executable with the executable name
 
-gcc -o gettime gettime.c # this will compile gettime.c and output an executable called gettime
+gcc -o hw2 hw2.c # this will compile hw2.c and output an executable called hw2
 ```
 
 # My Files
