@@ -46,5 +46,12 @@ This function is able to travel through the file hieracrhy, print out the files,
 
 # References
 
-https://www.cs.colby.edu/maxwell/courses/tutorials/maketutor/
-I used this link to make a makefile for my project
+- I used the given lecture slides from the CS332/532 Canvas classroom.
+- I used "Geeks for Geeks" to understand some of the string functions better.
+     https://www.geeksforgeeks.org/strcpy-in-c/
+     https://www.geeksforgeeks.org/strcat-in-c/
+     https://www.geeksforgeeks.org/strstr-in-ccpp/
+
+# GitHub Repo.
+https://github.com/N-Le-1/cs332
+
