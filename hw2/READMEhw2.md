@@ -23,7 +23,7 @@ gcc -o hw2 hw2.c # this will compile hw2.c and output an executable called hw2
 
 ### main()
 
-This function calls on listFiles and depending on the condition selected, the program will output the files listed in differnt ways.
+This function initializes the varibles used in the listFiles function, calls on listFiles and depending on the condition selected, the program will output the files listed in differnt ways.
 
 ### void listFiles(char *basePath, const int root, int depth, int size, char *pattern, int v)
 This function has a return void type. However, the function will print out the list of files in various ways or with certain constraints.
