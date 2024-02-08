@@ -34,9 +34,13 @@ This function is able to travel through the file hieracrhy, print out the files,
 
 
 # Output screenshots
+## SS of make file and running the program with no parameters
 ![image](https://github.com/N-Le-1/cs332/assets/156348689/07aff81b-99ba-4763-8bfa-3b4282c807c7)
+## SS of both the -v and -L functions
 ![image](https://github.com/N-Le-1/cs332/assets/156348689/82a6e017-db78-4e50-b30a-6d072197628d)
+## SS of the -s function
 ![image](https://github.com/N-Le-1/cs332/assets/156348689/167fee77-3cf1-42fe-81f1-8964c82a416f)
+## SS of combining multiple functions (ex. -v -L)
 ![image](https://github.com/N-Le-1/cs332/assets/156348689/5fe63aa7-29fe-45a6-ab06-eac518ab5d08)
 
 
