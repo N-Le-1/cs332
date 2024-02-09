@@ -27,7 +27,8 @@ This function takes a constant string (the given directory) as a parameter which
 This function recursively iterates through a directory and prints out the file name alongside a statement that declares if it is a file or a directory. When iterating through the first directory given, the program will print out the files. However, when printing out the files, if the program finds a new directory, the program will call listFiles again for the new directory found in order to print out the files in the new directory found.
 
 # Output screenshots
-<put your screenshots here>
+![image](https://github.com/N-Le-1/cs332/assets/156348689/d592d972-590e-4e49-85ba-9d6de5647927)
+
 
 # References
 
