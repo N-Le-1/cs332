@@ -5,11 +5,10 @@ This README is an example README for CS332/532 labs. This is a purely minimal ex
 
 # Compilation Instructions
 
-If you're not using a make file
 ```bash
 gcc -o <executable name> <filename> # this will compile the filename and return an executable with the executable name
 
-gcc -o gettime gettime.c # this will compile gettime.c and output an executable called gettime
+gcc -o readdir readdir.c # this will compile readdir.c and output an executable called readdir
 ```
 
 # My Files
