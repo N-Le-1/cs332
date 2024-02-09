@@ -56,7 +56,7 @@ void listFiles(const char *basePath){
             }
         }
         else{
-            printf("[%d] %s (File)\n",count,path);
+            printf("[-%d] %s (File)\n",count,path);
             count++;
         }
     }
