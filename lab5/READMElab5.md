@@ -20,16 +20,19 @@ This function calls on listFiles to recursively iterate through a directory and 
 
 
 ### listFiles(const char* basePath)
-This function returns a double
+This function has a void return type, but will print out files and directories when given a base directory.
 
-This function takes an integer as a parameter
+This function takes a constant string (the given directory) as a parameter which allows the program to use this function recursively.
 
-It creates a struct of a timeval object then gets the time of day and returns it
+This function recursively iterates through a directory and prints out the file name alongside a statement that declares if it is a file or a directory. When iterating through the first directory given, the program will print out the files. However, when printing out the files, if the program finds a new directory, the program will call listFiles again for the new directory found in order to print out the files in the new directory found.
 
 # Output screenshots
 <put your screenshots here>
 
 # References
 
-https://www.cs.colby.edu/maxwell/courses/tutorials/maketutor/
-I used this link to make a makefile for my project
+I used the given files and lab workbook in the Lab 5 assignment on Canvas. I also used some of the lecture slides to refer back to when using different libraries and functions.
+
+# Github Repo.
+
+https://github.com/N-Le-1/cs332
