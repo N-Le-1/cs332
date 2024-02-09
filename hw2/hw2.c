@@ -62,6 +62,8 @@ int main(int argc, char *argv[]) {
     char *pattern = NULL;
     int v = 0;
 
+    void (*funPointer)(char*,int,int,int,char*,int) = &listFiles;
+
     for (int i = 1; i < argc; i++) {
         if (strcmp(argv[i], "-L") == 0 && i + 1 < argc) {
             size = atoi(argv[++i]); //converts string value to integer value
@@ -74,7 +76,7 @@ int main(int argc, char *argv[]) {
         }
     }
 
-    listFiles(".", 0, 0, size, pattern, v);
+    (*funPointer)(".", 0, 0, size, pattern, v);
 
     return 0;
 }
