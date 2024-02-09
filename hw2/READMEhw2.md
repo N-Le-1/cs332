@@ -23,7 +23,7 @@ gcc -o hw2 hw2.c # this will compile hw2.c and output an executable called hw2
 
 ### main()
 
-This function initializes the varibles used in the listFiles function, calls on listFiles and depending on the condition selected, the program will output the files listed in differnt ways. The function will iterate through the argument variable "argv[]" which will check for all the different parameters and flags set for each variable to what the user selects before calling the listFiles function. This also allows the user to enter in multiple different flags. For example, they can call both "-L" and "-v" to filter out files with a certain size and give more information for the files that are outputted. If there are no variables or flags, then they will all be 0 or NULL so the listFiles function does not call a parameter that does not need to be called.
+This function initializes the varibles used in the listFiles function, calls on listFiles and depending on the condition selected, the program will output the files listed in differnt ways. The function will iterate through the argument variable "argv[]" which will check for all the different parameters and flags set for each variable to what the user selects before calling the listFiles function. This also allows the user to enter in multiple different flags. For example, they can call both "-L" and "-v" to filter out files with a certain size and give more information for the files that are outputted. If there are no variables or flags, then they will all be 0 or NULL so the listFiles function does not call a parameter that does not need to be called. This function also initializes a function pointer for the program. The function pointer points to the listFiles function for the main function to run and print out the file hierarchy.
 
 ### void listFiles(char *basePath, const int root, int depth, int size, char *pattern, int v)
 This function has a return void type. However, the function will print out the list of files in various ways or with certain constraints.
@@ -47,13 +47,15 @@ This function is able to travel through the file hieracrhy, print out the files,
 # References
 
 - I used the given lecture slides from the CS332/532 Canvas classroom.
-- I used "Geeks for Geeks" to understand some of the string functions better.
+- I used "Geeks for Geeks" to understand some of the string functions better and the usuage of function pointers.
   
      https://www.geeksforgeeks.org/strcpy-in-c/
   
      https://www.geeksforgeeks.org/strcat-in-c/
   
      https://www.geeksforgeeks.org/strstr-in-ccpp/
+
+     https://www.geeksforgeeks.org/function-pointer-in-c/
   
 
 # GitHub Repo.
