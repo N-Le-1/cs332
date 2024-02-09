@@ -46,7 +46,7 @@ This function is able to travel through the file hieracrhy, print out the files,
 
 # References
 
-- I used the given lecture slides from the CS332/532 Canvas classroom.
+- I used the given lecture slides and lab workbooks from the CS332/532 Canvas classroom.
 - I used "Geeks for Geeks" to understand some of the string functions better and the usuage of function pointers.
   
      https://www.geeksforgeeks.org/strcpy-in-c/
