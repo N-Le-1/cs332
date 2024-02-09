@@ -12,15 +12,14 @@ gcc -o readdir readdir.c # this will compile readdir.c and output an executable 
 ```
 
 # My Files
-## gettime.c
+## readdir.c
 
-### main()
+### main(int argc, char **argv)
 
-This function calls on gettime from the header file and prints it's output
+This function calls on listFiles to recursively iterate through a directory and list the files and directories. The recursive function comes into play when the program finds a new directory. If the program finds a new directory, the program will call listFiles and list the files in the new directory before moving on to the next file/directory.
 
-## gettime.h
 
-### gettime(int x)
+### listFiles(const char* basePath)
 This function returns a double
 
 This function takes an integer as a parameter
