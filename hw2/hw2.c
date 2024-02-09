@@ -25,7 +25,7 @@ void listFiles(char *basePath, const int root, int depth, int size, char *patter
 // CREATES A RECURSIVE FUNCTION UNTIL THE PROGRAM HAS READ THE ENTIRE DIRECTORY
 
     while ((dp = readdir(dir)) != NULL) {
-
+//ADDS ALL THE FILE INFORMATION TO THE path VARIABLE
         if (strcmp(dp->d_name, ".") != 0 && strcmp(dp->d_name, "..") != 0) {
             struct stat stats;
             strcpy(path, basePath);
