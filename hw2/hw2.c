@@ -3,7 +3,7 @@ Noah Le
 nhle
 Homework Assignment #2
 To compile: make or gcc -o hw2 hw2.c
-To run: make run <condition if wanted ex.( -s, -v, -L)> or ./hw2 <condition if wanted ex. (-s, -v, -L)
+To run: make run or ./hw2 <condition if wanted ex. (-s, -v, -L)
 */
 
 #include <stdio.h>
