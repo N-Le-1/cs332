@@ -50,5 +50,5 @@ I used the given Lab Materials in the Lab 6 Assignment
 I also used the link below to learn and use the qsort function in C
 https://www.tutorialspoint.com/c_standard_library/c_function_qsort.htm
 
-#GitHub Repo
+# GitHub Repo
 https://github.com/N-Le-1/cs332
