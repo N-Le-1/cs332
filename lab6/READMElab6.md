@@ -12,13 +12,11 @@ gcc -o lab6 lab6.c # this will compile lab6.c and output an executable called la
 ```
 
 # My Files
-## gettime.c
+## lab6.c
 
 ### main()
 
-This function calls on gettime from the header file and prints it's output
-
-## gettime.h
+This function reads a .csv file called "listings" and will sort the listings by host name and price and will write the new sorted list in seperate files called: "sortedByHostName" and "sortedByPrice". 
 
 ### gettime(int x)
 This function returns a double
