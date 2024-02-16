@@ -47,7 +47,7 @@ void displayStruct(struct listing item) {
 	printf("Calculated Host Listings Count : %d\n", item.calculated_host_listings_count);
 	printf("Availability_365 : %d\n\n", item.availability_365);
 }
-
+//Comparison function for sorting by host name
 int compareHostName(const void *x, const void *y) {
 	struct listing *listingX = (struct listing *)x;
 	struct listing *listingY = (struct listing *)y;
