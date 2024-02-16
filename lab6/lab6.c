@@ -48,6 +48,44 @@ void displayStruct(struct listing item) {
 	printf("Availability_365 : %d\n\n", item.availability_365);
 }
 
+int compareHostName(const void *x, const void *y) {
+	struct listing *listingX = (struct listing *)x;
+	struct listing *listingY = (struct listing *)y;
+	return strcmp(listingX->host_name, listingY->host_name);
+}
+
+// Comparison function for sorting by price
+int comparePrice(const void *x, const void *y) {
+	struct listing *listingX = (struct listing *)x;
+	struct listing *listingY = (struct listing *)y;
+	if (listingX->price < listingY->price){
+		return -1;
+	} 
+	else if (listingX->price > listingY->price){
+		return 1;
+	}
+	else{
+		return 0;
+	}
+}
+
+void writeToFile(struct listing *listings, int count, char *filename) {
+	FILE *file = fopen(filename, "w");
+	if (file == NULL) {
+		printf("Error opening file %s\n", filename);
+		exit(-1);
+	}
+	for (int i = 0; i < count; i++) {
+		fprintf(file, "%d,%d,%s,%s,%s,%f,%f,%s,%f,%d,%d,%d,%d\n",
+			listings[i].id, listings[i].host_id, listings[i].host_name,
+			listings[i].neighbourhood_group, listings[i].neighbourhood,
+			listings[i].latitude, listings[i].longitude, listings[i].room_type,
+			listings[i].price, listings[i].minimum_nights, listings[i].number_of_reviews,
+			listings[i].calculated_host_listings_count, listings[i].availability_365);
+	}
+	fclose(file);
+}
+
 int main(int argc, char* args[]) {
 	struct listing list_items[22555];
 	char line[LINESIZE];
@@ -65,8 +103,11 @@ int main(int argc, char* args[]) {
 	}
 	fclose(fptr);
 	
-	for (i=0; i<count; i++)
-		displayStruct(list_items[i]);
+	qsort(list_items, count, sizeof(struct listing), compareHostName);
+	writeToFile(list_items, count, "sortedByHostName.csv");
+
+	qsort(list_items, count, sizeof(struct listing), comparePrice);
+	writeToFile(list_items, count, "sortedByPrice.csv");
 	
 	return 0;
 }
