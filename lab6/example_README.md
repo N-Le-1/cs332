@@ -5,21 +5,10 @@ This README is an example README for CS332/532 labs. This is a purely minimal ex
 
 # Compilation Instructions
 
-If you're a make file
-```bash
-make # this will compile all the files
-make run # this will run all the files
-
-make run ARGS="<your args here>" # this will run the files with your args
-
-make run ARGS="a.txt b.txt" # this will run the executable with the arguments of a.txt b.txt
-```
-
-If you're not using a make file
 ```bash
 gcc -o <executable name> <filename> # this will compile the filename and return an executable with the executable name
 
-gcc -o gettime gettime.c # this will compile gettime.c and output an executable called gettime
+gcc -o lab6 lab6.c # this will compile lab6.c and output an executable called lab6
 ```
 
 # My Files
