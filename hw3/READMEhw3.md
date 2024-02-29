@@ -57,14 +57,19 @@ For the new function flag, "-e" is able to let the user use UNIX commands. The p
 
 - I used the given lecture slides and lab workbooks from the CS332/532 Canvas classroom.
 - I used "Geeks for Geeks" to understand some of the string functions better and the usuage of function pointers.
+- I used StackOverFlow to research and understand how to use execvp().
   
-     https://www.geeksforgeeks.org/strcpy-in-c/
+    https://www.geeksforgeeks.org/strcpy-in-c/
   
-     https://www.geeksforgeeks.org/strcat-in-c/
+    https://www.geeksforgeeks.org/strcat-in-c/
   
-     https://www.geeksforgeeks.org/strstr-in-ccpp/
+    https://www.geeksforgeeks.org/strstr-in-ccpp/
 
-     https://www.geeksforgeeks.org/function-pointer-in-c/
+    https://www.geeksforgeeks.org/function-pointer-in-c/
+
+    https://www.geeksforgeeks.org/strtok-strtok_r-functions-c-examples/
+
+    https://stackoverflow.com/questions/27541910/how-to-use-execvp
   
 
 # GitHub Repo.
