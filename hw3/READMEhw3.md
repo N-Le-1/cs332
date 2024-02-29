@@ -15,7 +15,7 @@ If you're not using a make file
 ```bash
 gcc -o <executable name> <filename> # this will compile the filename and return an executable with the executable name
 
-gcc -o hw3 hw3.c # this will compile hw2.c and output an executable called hw3
+gcc -o hw3 hw3.c # this will compile hw3.c and output an executable called hw3
 ```
 
 # My Files
@@ -48,6 +48,9 @@ For the new function flag, "-e" is able to let the user use UNIX commands. The p
 ![image](https://github.com/N-Le-1/cs332/assets/156348689/167fee77-3cf1-42fe-81f1-8964c82a416f)
 ## SS of combining multiple functions (ex. -v -L)
 ![image](https://github.com/N-Le-1/cs332/assets/156348689/5fe63aa7-29fe-45a6-ab06-eac518ab5d08)
+## SS of using the -e flag combined with the -L flag
+![image](https://github.com/N-Le-1/cs332/assets/156348689/06cd544f-19d6-4763-928b-e446ccf315bd)
+
 
 
 # References
