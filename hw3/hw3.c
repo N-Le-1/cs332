@@ -3,7 +3,7 @@ Noah Le
 nhle
 Homework Assignment #3
 To compile: make or gcc -o hw3 hw3.c
-To run: make run or ./hw3 <condition if wanted ex. (-s, -v, -L)
+To run: make run or ./hw3 <condition if wanted ex. (-s, -v, -L, -e)
 */
 
 #include <stdio.h>
