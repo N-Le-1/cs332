@@ -15,11 +15,11 @@ If you're not using a make file
 ```bash
 gcc -o <executable name> <filename> # this will compile the filename and return an executable with the executable name
 
-gcc -o hw2 hw2.c # this will compile hw2.c and output an executable called hw2
+gcc -o hw3 hw3.c # this will compile hw2.c and output an executable called hw3
 ```
 
 # My Files
-## hw2.c
+## hw3.c
 
 ### main()
 
@@ -32,6 +32,12 @@ This function takes in 6 variables. First variable is a pointer of basePath whic
 
 This function is able to travel through the file hieracrhy, print out the files, and filter through files through given conditions described above. The function begins with opening the directry, creating a structure pointer, and initialzing the string variable "path" where all the information being collected will be stored. I first created a base case that checks, if there is no directory, then the code will end the program. If the directory is presenet, the program will move into the recursive function that will continue to print out files until the directory is empty. The program uses "strcpy" and "strcat" to copy the given information and concatinate the information to the "path" variable which will be printed out. Towards the end of the loop, the program will check for if the parameters are active (-v, -s, -L) and have the necessary information provided with them. For example, Line 42 represents the "-s" parameter which checks if the pattern variable is not empty and if both the directory name and the pattern variable has the same string characters using the strstr() function. Line 45 represents the "-L" option which compares the size variable to a files size using the stats.st_size. The final parameter is the "-v" function which just checks if the flag is active. If it is, then the program will output more details for the files. If any of these parameters fails the condition, the program will skip the conditions and just print out the files and folders in a hierachry form. Once the while loop and recursive function ends, the program will close the directory. 
 
+### void executeUnixCommand( char *command, const char *filename)
+This function has a void return type, but is able to operate UNIX commands on the user's directory when reading the argv[].
+
+This function takes in 2 parameters. One parameter is a string that is the UNIX command. For example the input could be "ls -l" which is a UNIX command to list files and directroy details. The second parameter is the filename which is the file the current program is on. 
+
+For the new function flag, "-e" is able to let the user use UNIX commands. The program first creates a new child process using "fork()". Inside the child process, the function will tokenize the "command" variable. The program will split the command into individual arguments using " " as a delimiter and will be stored in an array called args. After the function tokenizies the commands from args, the program will setup and execute the arguments using the "execvp()". If the execvp call executes correctly, the child process will execute the UNIX command. If the execvp doesn't execute correctly, the user will recieve an error message. The parent process will wait for the child process to complete using the "wait()" function. If the "fork()" call fails, then the user will recieve an error message. This function creates a child process that tokenizes UNIX commands and executes them using "execvp". 
 
 # Output screenshots
 ## SS of make file and running the program with no parameters
