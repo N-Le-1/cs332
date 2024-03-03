@@ -21,26 +21,27 @@ void executeUnixCommand (char *command,const char *filename) {
     pid = fork();
 
     if (pid == 0) {
+    // INITIALIZE VARIABLES
         char *args[64];
         char *token;
         int i =0;
-
+    //PARSE COMMANDS AND ADD COMMANDS TO TOKEN
         token = strtok((char *)command, " ");
         while(token !=NULL){
             args[i++] = token;
             token = strtok(NULL," ");
         }
         args[i] = NULL;
-        // Child process
+        // CHILD PROCESS
         execvp(args[0],args);
-        // If execlp fails, print an error message
+        // IF EXECVP FAILS, PRINT AN ERROR
         perror("Error executing command RAHHHHH");
         exit(EXIT_FAILURE);
     } else if (pid > 0) {
-        // Parent process
-        wait(NULL); // Wait for child process to complete
+        // PARENT PROCESS
+        wait(NULL); // WAIT FOR CHILD
     } else {
-        // Fork failed
+        // FORK FAILED
         perror("Error creating child process");
         exit(EXIT_FAILURE);
     }
@@ -84,6 +85,7 @@ void listFiles(char *basePath, const int root, int depth, int size, char *patter
                 } else {
                     printf("%*s%s\n", depth, "", dp->d_name);
                 }
+        // CONDITION FOR e OPTION
                 if(command){
                     executeUnixCommand(command,path);
                 }
