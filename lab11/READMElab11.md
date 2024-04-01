@@ -8,7 +8,6 @@ This README is an example README for CS332/532 labs. This is a purely minimal ex
 gcc -O -Wall <executable name> -lpthread # this will compile the filename and return an executable with the executable name
 
 gcc -O -Wall pthread_sum.c -lpthread # this will compile pthread_sum.c and output an executable called a.out
-```
 
 # My Files
 ## pthread_sum.c
