@@ -77,11 +77,7 @@ void show_jobs() {
 }
 
 int main(int argc, char *argv[]) {
-    if (argc != 2) {
-        printf("Usage: %s <number_of_cores>\n", argv[0]);
-        exit(EXIT_FAILURE);
-    }
-
+ 
     max_jobs = atoi(argv[1]);
 
     printf("====Welcome to the Job Scheduler for CS332====\n");
